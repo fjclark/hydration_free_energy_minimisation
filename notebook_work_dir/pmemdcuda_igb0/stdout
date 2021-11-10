@@ -1,0 +1,87 @@
+
+          -------------------------------------------------------
+          Amber 20 PMEMD                              2020
+          -------------------------------------------------------
+
+| PMEMD implementation of SANDER, Release 18
+
+|  Compiled date/time: Mon Sep 20 15:47:37 2021
+| Run on 11/09/2021 at 10:14:46
+
+|   Executable path: /home/finlayclark/software/amber20/bin/pmemd.cuda
+| Working directory: /home/finlayclark/Documents/research/restraint_comparison_mif/testing/dg_hyd/mif180_own_param/vacuum/input/hydration_free_energy_minimisation/notebook_work_dir/pmemdcuda_igb0
+|          Hostname: Unknown
+  [-O]verwriting output
+
+File Assignments:
+|   MDIN: amber.cfg                                                             
+|  MDOUT: stdout                                                                
+| INPCRD: amber.rst7                                                            
+|   PARM: amber.prm7                                                            
+| RESTRT: amber.crd                                                             
+|   REFC: refc                                                                  
+|  MDVEL: mdvel                                                                 
+|   MDEN: mden                                                                  
+|  MDCRD: mdcrd                                                                 
+| MDINFO: amber.nrg                                                             
+|  MDFRC: mdfrc                                                                 
+
+
+ Here is the input file:
+
+Minimisation                                                                   
+ &cntrl                                                                        
+  imin=1,                                                                      
+  ntx=1,                                                                       
+  ntxo=1,                                                                      
+  ntpr=100,                                                                    
+  irest=0,                                                                     
+  maxcyc=1000,                                                                 
+  ncyc=1000,                                                                   
+  ntb=0,                                                                       
+  cut=999.,                                                                    
+  igb=0                                                                        
+ /                                                                             
+
+
+Note: ig = -1. Setting random seed to   831008 based on wallclock time in 
+      microseconds.
+| irandom = 1, using AMBER's internal random number generator (default).
+ 
+|--------------------- INFORMATION ----------------------
+| GPU (CUDA) Version of PMEMD in use: NVIDIA GPU IN USE.
+|                    Version 18.0.0
+| 
+|                      03/25/2018
+| 
+| Implementation by:
+|                    Ross C. Walker     (SDSC)
+|                    Scott Le Grand     (nVIDIA)
+| 
+| Version 18 performance extensions by:
+|                    David Cerutti     (Rutgers)
+| 
+| Precision model in use:
+|      [SPFP] - Single Precision Forces, 64-bit Fixed Point
+|               Accumulation. (Default)
+| 
+|--------------------------------------------------------
+ 
+|----------------- CITATION INFORMATION -----------------
+|
+|    When publishing work that utilized the CUDA version
+|    of AMBER, please cite the following in addition to
+|    the regular AMBER citations:
+|
+|  - Romelia Salomon-Ferrer; Andreas W. Goetz; Duncan
+|    Poole; Scott Le Grand; Ross C. Walker "Routine
+|    microsecond molecular dynamics simulations with
+|    AMBER - Part II: Particle Mesh Ewald", J. Chem.
+|    Theory Comput., 2013, 9 (9), pp3878-3888,
+|    DOI: 10.1021/ct400314y.
+|
+|  - Andreas W. Goetz; Mark J. Williamson; Dong Xu;
+|    Duncan Poole; Scott Le Grand; Ross C. Walker
+|    "Routine microsecond molecular dynamics simulations
+|    with AMBER - Part I: Generalized Born", J. Chem.
+|    Theory Comput., 2012, 8 (5), pp1542-1555.

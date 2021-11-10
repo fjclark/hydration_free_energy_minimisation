@@ -1,0 +1,274 @@
+
+          -------------------------------------------------------
+          Amber 20 PMEMD                              2020
+          -------------------------------------------------------
+
+| PMEMD implementation of SANDER, Release 18
+
+|  Compiled date/time: Mon Sep 20 15:47:37 2021
+| Run on 11/09/2021 at 09:42:52
+
+|   Executable path: /home/finlayclark/software/amber20/bin/pmemd
+| Working directory: /home/finlayclark/Documents/research/restraint_comparison_mif/testing/dg_hyd/mif180_own_param/vacuum/input/hydration_free_energy_minimisation/notebook_work_dir/pmemd_igb1_extdiel1
+|          Hostname: Unknown
+  [-O]verwriting output
+
+File Assignments:
+|   MDIN: amber.cfg                                                             
+|  MDOUT: stdout                                                                
+| INPCRD: amber.rst7                                                            
+|   PARM: amber.prm7                                                            
+| RESTRT: amber.crd                                                             
+|   REFC: refc                                                                  
+|  MDVEL: mdvel                                                                 
+|   MDEN: mden                                                                  
+|  MDCRD: mdcrd                                                                 
+| MDINFO: amber.nrg                                                             
+|  MDFRC: mdfrc                                                                 
+
+
+ Here is the input file:
+
+Minimisation                                                                   
+ &cntrl                                                                        
+  imin=1,                                                                      
+  ntx=1,                                                                       
+  ntxo=1,                                                                      
+  ntpr=100,                                                                    
+  irest=0,                                                                     
+  maxcyc=1000,                                                                 
+  ncyc=1000,                                                                   
+  ntb=0,                                                                       
+  cut=999.,                                                                    
+  igb=1                                                                        
+  extdiel=1.0                                                                  
+ /                                                                             
+
+
+Note: ig = -1. Setting random seed to   886975 based on wallclock time in 
+      microseconds.
+| irandom = 1, using AMBER's internal random number generator (default).
+ 
+| Conditional Compilation Defines Used:
+| PUBFFT
+| BINTRAJ
+| EMIL
+
+| New format PARM file being parsed.
+| Version =    1.000 Date = 11/09/21 Time = 09:41:54
+
+| Note: 1-4 EEL scale factors are being read from the topology file.
+
+| Note: 1-4 VDW scale factors are being read from the topology file.
+| INFO:    Reading atomic numbers from topology file.
+| Duplicated    0 dihedrals
+
+| Duplicated    0 dihedrals
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+ NATOM  =      34 NTYPES =       7 NBONH =      12 MBONA  =      25
+ NTHETH =      23 MTHETA =      35 NPHIH =      51 MPHIA  =      54
+ NHPARM =       0 NPARM  =       0 NNB   =     175 NRES   =       1
+ NBONA  =      25 NTHETA =      35 NPHIA =      54 NUMBND =      13
+ NUMANG =      20 NPTRA  =      15 NATYP =      11 NPHB   =       0
+ IFBOX  =       0 NMXRS  =      34 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+ Implicit solvent radii are modified Bondi radii (mbondi)                                                   
+--------------------------------------------------------------------------------
+   2.  CONTROL  DATA  FOR  THE  RUN
+--------------------------------------------------------------------------------
+
+BioSimSpace Syst                                                                
+
+General flags:
+     imin    =       1, nmropt  =       0
+
+Nature and format of input:
+     ntx     =       1, irest   =       0, ntrx    =       1
+
+Nature and format of output:
+     ntxo    =       1, ntpr    =     100, ntrx    =       1, ntwr    =       1
+     iwrap   =       0, ntwx    =       0, ntwv    =       0, ntwe    =       0
+     ioutfm  =       1, ntwprt  =       0, idecomp =       0, rbornstat=      0
+
+Potential function:
+     ntf     =       1, ntb     =       0, igb     =       1, nsnb    =      25
+     ipol    =       0, gbsa    =       0, iesp    =       0
+     dielc   =   1.00000, cut     = 999.00000, intdiel =   1.00000
+     saltcon =   0.00000, offset  =   0.09000, gbalpha=    1.00000
+     gbbeta  =   0.00000, gbgamma =   0.00000, surften =   0.00500
+     rdt     =   0.00000, rgbmax  =  25.00000  extdiel =   1.00000
+     alpb  =        0
+
+Frozen or restrained atoms:
+     ibelly  =       0, ntr     =       0
+
+Energy minimization:
+     maxcyc  =    1000, ncyc    =    1000, ntmin   =       1
+     dx0     =   0.01000, drms    =   0.00010
+
+| Intermolecular bonds treatment:
+|     no_intermolecular_bonds =       1
+
+| Energy averages sample interval:
+|     ene_avg_sampling =       1
+
+--------------------------------------------------------------------------------
+   3.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+BioSimSpace Syst                                                                
+ begin time read from input coords =     0.000 ps
+
+ 
+ Number of triangulated 3-point waters found:        0
+| Dynamic Memory, Types Used:
+| Reals                1206
+| Integers             3011
+
+--------------------------------------------------------------------------------
+   4.  RESULTS
+--------------------------------------------------------------------------------
+
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+      1       4.4025E+01     2.1685E+01     6.2190E+01     CAR        14
+
+ BOND    =       14.9381  ANGLE   =       19.5552  DIHED      =        1.0557
+ VDWAALS =       -2.1927  EEL     =      -30.1405  EGB        =        0.0000
+ 1-4 VDW =       13.5155  1-4 EEL =       27.2937  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    100       1.6877E+01     1.0411E+00     3.3237E+00     CAQ        13
+
+ BOND    =        1.1106  ANGLE   =        9.7679  DIHED      =        0.7119
+ VDWAALS =       -1.8607  EEL     =      -29.3853  EGB        =        0.0000
+ 1-4 VDW =       10.7694  1-4 EEL =       25.7628  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    200       1.6430E+01     2.1205E-01     6.1144E-01     CAR        14
+
+ BOND    =        1.0470  ANGLE   =        9.3772  DIHED      =        0.7514
+ VDWAALS =       -1.8347  EEL     =      -29.3672  EGB        =        0.0000
+ 1-4 VDW =       10.7382  1-4 EEL =       25.7185  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    300       1.6164E+01     1.7905E-01     4.6877E-01     CAL        11
+
+ BOND    =        1.0430  ANGLE   =        9.1345  DIHED      =        0.8032
+ VDWAALS =       -1.8371  EEL     =      -29.3573  EGB        =        0.0000
+ 1-4 VDW =       10.6940  1-4 EEL =       25.6837  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    400       1.5976E+01     2.3753E-01     7.4279E-01     CAR        14
+
+ BOND    =        1.0375  ANGLE   =        8.9667  DIHED      =        0.8615
+ VDWAALS =       -1.8519  EEL     =      -29.3534  EGB        =        0.0000
+ 1-4 VDW =       10.6565  1-4 EEL =       25.6589  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    500       1.5839E+01     1.2909E-01     3.1394E-01     H          34
+
+ BOND    =        1.0402  ANGLE   =        8.8358  DIHED      =        0.9199
+ VDWAALS =       -1.8724  EEL     =      -29.3529  EGB        =        0.0000
+ 1-4 VDW =       10.6295  1-4 EEL =       25.6390  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    600       1.5734E+01     1.1310E-01     2.8070E-01     CAR        14
+
+ BOND    =        1.0370  ANGLE   =        8.7413  DIHED      =        0.9783
+ VDWAALS =       -1.8977  EEL     =      -29.3551  EGB        =        0.0000
+ 1-4 VDW =       10.6061  1-4 EEL =       25.6244  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    700       1.5655E+01     3.9497E-01     1.2643E+00     CAK        10
+
+ BOND    =        1.0310  ANGLE   =        8.6745  DIHED      =        1.0346
+ VDWAALS =       -1.9253  EEL     =      -29.3591  EGB        =        0.0000
+ 1-4 VDW =       10.5856  1-4 EEL =       25.6133  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    800       1.5585E+01     8.6685E-02     2.3154E-01     NAN        19
+
+ BOND    =        1.0332  ANGLE   =        8.6066  DIHED      =        1.0880
+ VDWAALS =       -1.9525  EEL     =      -29.3631  EGB        =        0.0000
+ 1-4 VDW =       10.5696  1-4 EEL =       25.6027  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    900       1.5529E+01     9.3248E-02     2.3329E-01     CAL        11
+
+ BOND    =        1.0332  ANGLE   =        8.5562  DIHED      =        1.1384
+ VDWAALS =       -1.9797  EEL     =      -29.3680  EGB        =        0.0000
+ 1-4 VDW =       10.5544  1-4 EEL =       25.5945  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+   1000       1.5484E+01     2.5449E-01     9.0902E-01     CAL        11
+
+ BOND    =        1.0333  ANGLE   =        8.5154  DIHED      =        1.1846
+ VDWAALS =       -2.0051  EEL     =      -29.3731  EGB        =        0.0000
+ 1-4 VDW =       10.5419  1-4 EEL =       25.5872  RESTRAINT  =        0.0000
+
+
+  Maximum number of minimization cycles reached.
+
+
+                    FINAL RESULTS
+
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+   1000       1.5484E+01     2.5449E-01     9.0902E-01     CAL        11
+
+ BOND    =        1.0333  ANGLE   =        8.5154  DIHED      =        1.1846
+ VDWAALS =       -2.0051  EEL     =      -29.3731  EGB        =        0.0000
+ 1-4 VDW =       10.5419  1-4 EEL =       25.5872  RESTRAINT  =        0.0000
+--------------------------------------------------------------------------------
+   5.  TIMINGS
+--------------------------------------------------------------------------------
+
+|  NonSetup CPU Time in Major Routines:
+|
+|     Routine           Sec        %
+|     ------------------------------
+|     Nonbond           1.06   78.43
+|     Bond              0.02    1.21
+|     Angle             0.05    3.98
+|     Dihedral          0.19   14.38
+|     Shake             0.00    0.00
+|     Other             0.03    2.00
+|     ------------------------------
+|     Total             1.35
+
+|  Generalized Born CPU Time:
+|
+|     Routine                 Sec        %
+|     ------------------------------------
+|     Radii Calc              0.29   21.60
+|     Diagonal Calc           0.40   29.30
+|     Off Diagonal Calc       0.33   24.23
+|     GBSA LCPO Calc          0.01    0.63
+|     ---------------------------------
+|     Total                   1.02   75.13
+
+|  Setup CPU time:            0.09 seconds
+|  NonSetup CPU time:         1.35 seconds
+|  Total CPU time:            1.45 seconds     0.00 hours
+
+|  Setup wall time:           0    seconds
+|  NonSetup wall time:        0    seconds
+|  Total wall time:           0    seconds     0.00 hours

@@ -1,0 +1,86 @@
+
+          -------------------------------------------------------
+          Amber 20 PMEMD                              2020
+          -------------------------------------------------------
+
+| PMEMD implementation of SANDER, Release 18
+
+|  Compiled date/time: Mon Sep 20 15:47:37 2021
+| Run on 11/09/2021 at 10:12:25
+
+|   Executable path: /home/finlayclark/software/amber20/bin/pmemd
+| Working directory: /home/finlayclark/Documents/research/restraint_comparison_mif/testing/dg_hyd/mif180_own_param/vacuum/input/hydration_free_energy_minimisation/notebook_work_dir/pmemd_igb0_ntb0
+|          Hostname: Unknown
+  [-O]verwriting output
+
+File Assignments:
+|   MDIN: amber.cfg                                                             
+|  MDOUT: stdout                                                                
+| INPCRD: amber.rst7                                                            
+|   PARM: amber.prm7                                                            
+| RESTRT: amber.crd                                                             
+|   REFC: refc                                                                  
+|  MDVEL: mdvel                                                                 
+|   MDEN: mden                                                                  
+|  MDCRD: mdcrd                                                                 
+| MDINFO: amber.nrg                                                             
+|  MDFRC: mdfrc                                                                 
+
+
+ Here is the input file:
+
+Minimisation                                                                   
+ &cntrl                                                                        
+  imin=1,                                                                      
+  ntx=1,                                                                       
+  ntxo=1,                                                                      
+  ntpr=100,                                                                    
+  irest=0,                                                                     
+  maxcyc=1000,                                                                 
+  ncyc=1000,                                                                   
+  ntb=0,                                                                       
+  cut=999.,                                                                    
+  igb=0                                                                        
+ /                                                                             
+
+
+Note: ig = -1. Setting random seed to   343830 based on wallclock time in 
+      microseconds.
+| irandom = 1, using AMBER's internal random number generator (default).
+ 
+ 
+| Conditional Compilation Defines Used:
+| PUBFFT
+| BINTRAJ
+| EMIL
+
+| New format PARM file being parsed.
+| Version =    1.000 Date = 11/09/21 Time = 10:11:30
+
+| Note: 1-4 EEL scale factors are being read from the topology file.
+
+| Note: 1-4 VDW scale factors are being read from the topology file.
+| Duplicated    0 dihedrals
+
+| Duplicated    0 dihedrals
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+ NATOM  =      34 NTYPES =       7 NBONH =      12 MBONA  =      25
+ NTHETH =      23 MTHETA =      35 NPHIH =      51 MPHIA  =      54
+ NHPARM =       0 NPARM  =       0 NNB   =     175 NRES   =       1
+ NBONA  =      25 NTHETA =      35 NPHIA =      54 NUMBND =      13
+ NUMANG =      20 NPTRA  =      15 NATYP =      11 NPHB   =       0
+ IFBOX  =       0 NMXRS  =      34 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+| Coordinate Index Table dimensions:     0    0    0
+| Direct force subcell size =        NaN       NaN       NaN
+
+--------------------------------------------------------------------------------
+   2.  CONTROL  DATA  FOR  THE  RUN
+--------------------------------------------------------------------------------
+
+BioSimSpace Syst                                                                
